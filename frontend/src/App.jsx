@@ -49,7 +49,7 @@ const App = () => {
 
       <div className="self-center flex flex-col gap-5 w-[80%] mt-10">
         <input
-          placeholder="e.g: https://youtube.com"
+          placeholder="e.g: https://www.youtube.com"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
           className=" h-14 rounded-lg outline-none pl-2 font-normal text-lg"
@@ -67,18 +67,18 @@ const App = () => {
       ) : (
         <>
           <div className="text-white self-center  mt-[100px] mb-[40px] text-xl flex flex-col gap-3 w-[80%]">
-            <div className="flex items-center gap-2">
+            <div className="flex text-sm md:text-lg items-center gap-2">
               <p className="font-semibold text-slate-300">Load Time:</p>
               <p className="">{data?.pageLoadTime.toFixed(2)} ms</p>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex text-sm md:text-lg items-center gap-2">
               <p className="font-semibold text-slate-300">
                 Total Requests Size:
               </p>
               <p>{data?.totalRequestSize} bytes</p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex text-sm md:text-lg items-center gap-2">
               <p className="font-semibold text-slate-300">Total Requests:</p>
               <p>{data?.totalRequests}</p>
             </div>
